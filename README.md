@@ -16,6 +16,16 @@ A personal home lab I built to practice SOC analyst workflows hands-on. Everythi
 
 ---
 
+## How it works
+
+1. **Suricata** uses the pcap library to capture packets from the network interface, matches them against the Emerging Threats ruleset, and writes the results to `eve.json`
+2. **Sysmon** collects Windows system logs via the Windows Event Viewer (process creation, network connections, file changes)
+3. **Wazuh agent** gathers both Suricata and Sysmon logs and forwards them to the Wazuh manager
+4. **Wazuh manager** analyzes the incoming logs, applies detection rules, generates alerts, and acts as the central point for all security event management
+5. **TheHive** receives the alerts from Wazuh so that SOC L1 analysts can investigate and resolve incidents
+
+---
+
 ## What I did
 
 - Set up Wazuh + TheHive via Docker on Kali Linux
@@ -26,10 +36,13 @@ A personal home lab I built to practice SOC analyst workflows hands-on. Everythi
 
 ---
 
-## Screenshots:
+## Screenshots
+
 See [screenshots/](screenshots/)
 
 ---
 
-## Docs to configuration :
+## Docs
 
+- [Setup notes](docs/setup-guide.md)
+- [Lessons learned](docs/lessons-learned.md)
