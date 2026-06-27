@@ -37,12 +37,4 @@ A personal home lab I built to practice SOC analyst workflows hands-on. Everythi
 ---
 
 ## Screenshots
-
-See [screenshots/](screenshots/)
-
----
-
-## Docs
-
-- [Setup notes](docs/setup-guide.md)
-- [Lessons learned](docs/lessons-learned.md)
+https://github.com/Tuncay2006/soc-homelab/tree/main/screenshots
