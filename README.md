@@ -31,8 +31,8 @@ A personal home lab I built to practice SOC analyst workflows hands-on. Everythi
 - Set up Wazuh + TheHive via Docker on Kali Linux
 - Connected a Windows 11 agent with Sysmon
 - Forwarded Suricata logs through Wazuh into TheHive
-- Wrote a Python script to integrate Wazuh alerts with TheHive 5 API
-- Analyzed PCAP files and triaged alerts end-to-end
+- Configurate to integrate Wazuh alerts with TheHive 5  over API
+- Analyzed logs and triaged alerts end-to-end
 
 ---
 
